@@ -11,4 +11,9 @@ public class FirstController {
         model.addAttribute("username","안녕");
         return "greeting";
     }
+    @GetMapping("/bye")
+    public String SeeYouNext(Model model){
+        model.addAttribute("nickname","User1");
+        return "goodbye";
+    }
 }
